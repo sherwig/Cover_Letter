@@ -1,7 +1,7 @@
-$bg: yellow;
+// $bg: yellow;
 
 body {
-  background: $bgColor;
+  background-color: #f4f9f9;
   font: $font-main;
 }
 
@@ -43,34 +43,65 @@ nav {
 }
 
 #{headings()} {
-  font: $font-highlight;
+  font: $font-main;
 }
 
 h1 {
   font-size: $h1Size;
   margin: $h1Margin;
   text-align: center;
+  color: $secondaryColor;
 
 }
 
 h2 {
   font-size: $h2Size;
-  margin: $h2Margin;
+  // color: #a4ebf3;
+  @include center;
 }
 
-h1,
-h2,
-h2,
-h4 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
+#image1 {
+  height: 100%;
+  background-image: url("../dist/img/insta1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+
+  // max-width: 100%;
+  // height: auto;
+  // position: relative;
+
 }
+
+#image2 {
+  height: 100%;
+  background-image: url("../dist/img/harry2.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 31% auto;
+
+  // max-width: 100%;
+  // height: auto;
+  // position: relative;
+
+}
+
+.title {}
+
+// h1,
+// h2,
+// h2,
+// h4 {
+//   font-family: 'Oswald', sans-serif;
+//   text-transform: uppercase;
+// }
 
 p {
   font-size: $pSize;
-  margin: $pMargin;
+  // margin: $pMargin;
   padding-bottom: 10px;
-  font-family: 'Cardo', serif;
+  font-family: $font-highlight;
+  @include center;
 
 }
 

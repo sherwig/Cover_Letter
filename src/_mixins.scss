@@ -25,4 +25,10 @@
   }
 }
 
+@mixin center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
 // @mixin sticky-footer($footer-height, $wrapper-selector: unquote("#wrapper"), $container-selector: unquote("#container"), $footer-selector: unquote("#footer"))

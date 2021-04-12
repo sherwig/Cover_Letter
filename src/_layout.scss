@@ -4,12 +4,16 @@
   grid-template-rows: auto;
   // grid-template-areas: "header header header header" "main . . main" "footer footer footer footer";
 
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header" "main";
+  grid-template-columns: 1fr;
+  grid-template-areas: "intro" "body";
 }
 
-header {
-  grid-area: header;
+.intro {
+  grid-area: intro;
+}
+
+.body1 {
+  grid-area: body;
 }
 
 main {
